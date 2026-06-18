@@ -41,7 +41,7 @@ const EVENTS = [
     id: 1, name: "TechConf 2025 Gala Dinner", org: "InnovateTech Ltd", orgEmoji: "🏢",
     dist: "0.4 km", pickup: "18:30 – 20:00", portions: 18, total: 40, price: 3.50, familyPrice: 6.00,
     emoji: "🍛", tag: "Closing Soon", tagColor: C.danger,
-    menu: [{ cat: "Mains", items: ["Butter Chicken", "Vegetable Biryani", "Garlic Naan"] },
+    menu: [{ cat: "Mains", items: ["Butter Fish", "Vegetable Biryani", "Garlic Naan"] },
     { cat: "Desserts", items: ["Mango Lassi", "Gulab Jamun"] }],
     carbon: 14.2, addr: "15 Innovation Park, Tech Quarter, London", priv: false, charReqs: 2,
     lat: 51.507, lng: -0.128
