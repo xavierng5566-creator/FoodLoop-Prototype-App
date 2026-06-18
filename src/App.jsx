@@ -793,8 +793,6 @@ function PubHome({ nav, senior, onTab, setNotifSeen, events }) {
             Nearby Events
           </h2>
           <div style={{ display: "flex", gap: "8px" }}>
-            <SmBtn onClick={() => nav("mapView")} bg={C.g100} color={C.g800}
-              style={{ fontSize: "11px", padding: "6px 12px" }}>🗺️ Map</SmBtn>
             <span onClick={() => onTab("events")}
               style={{
                 fontFamily: F.b, fontSize: "13px", color: C.g700,
@@ -923,7 +921,6 @@ function Events({ nav, senior, events }) {
           <h2 style={{ fontFamily: F.h, fontSize: "22px", fontWeight: 900, color: C.text }}>
             Discover Events
           </h2>
-          <SmBtn onClick={() => nav("mapView")} style={{ fontSize: "11px" }}>🗺️ Map</SmBtn>
         </div>
         <div style={{ position: "relative", marginBottom: "10px" }}>
           <span style={{
@@ -1004,7 +1001,7 @@ function Events({ nav, senior, events }) {
 }
 
 /* ── Map View (simulated) ───────────────────────────────────── */
-function MapView({ nav }) {
+function MapView({ nav, events }) {
   const [sel, setSel] = useState(null);
 
   const pins = events.slice(0, 8).map((ev, i) => ({
